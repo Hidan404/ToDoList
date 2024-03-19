@@ -24,4 +24,11 @@ public class TodoList {
             System.out.println(string);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Lista = " + items + " ";
+    }
+
+    
 }
