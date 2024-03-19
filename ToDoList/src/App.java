@@ -30,6 +30,12 @@ public class App {
 
                     lista.listarItemns();
                     break;
+                case 3:
+                System.out.println("remover tarefa");
+                int indice = entrada.nextInt();
+
+                lista.removerItem(indice);
+                break;
                 default:
                     break;
             }
