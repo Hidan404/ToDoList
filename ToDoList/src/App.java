@@ -15,7 +15,7 @@ public class App {
         boolean condicao =  false;
         while (condicao != true) {
 
-            System.out.println("Escolha uma das ocoes 1\n 2\n 3\n");
+            System.out.println("Escolha uma das ocoes \n- 1\n- 2\n- 3\n");
             int escolha = entrada.nextInt();
 
             switch (escolha) {
