@@ -7,6 +7,9 @@ public class TodoList {
     public TodoList(List<String> items) {
         this.items = items;
     }
+    public TodoList(){
+        
+    }
 
     public void adicionarItem(String e){
         items.add(e);
