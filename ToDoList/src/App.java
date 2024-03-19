@@ -51,6 +51,8 @@ public class App {
         
         }
 
+        lista.toString();
+
         entrada.close();
     }
 }
