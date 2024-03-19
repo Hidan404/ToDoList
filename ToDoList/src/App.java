@@ -12,8 +12,8 @@ public class App {
         System.out.println("2 - liste as tarefas disponiveis");
         System.out.println("3 - remova uma tarefa");
 
-        boolean condicao =  true;
-        while (!condicao) {
+        boolean condicao =  false;
+        while (condicao != true) {
 
             System.out.println("Escolha uma das ocoes 1\n 2\n 3\n");
             int escolha = entrada.nextInt();
@@ -21,6 +21,7 @@ public class App {
             switch (escolha) {
                 case 1:
                     System.out.println("Tarefa adicionada ");
+                    entrada.nextLine();
                     String tarefa = entrada.nextLine();
 
                     lista.adicionarItem(tarefa);
@@ -31,14 +32,23 @@ public class App {
                     lista.listarItemns();
                     break;
                 case 3:
-                System.out.println("remover tarefa");
-                int indice = entrada.nextInt();
+                    System.out.println("remover tarefa");
+                    int indice = entrada.nextInt();
 
-                lista.removerItem(indice);
-                break;
+                    lista.removerItem(indice);
+                    break;
+
                 default:
                     break;
             }
+            entrada.nextLine();
+            System.out.println("Deseja sair? ");
+            String respostaUsuario = entrada.nextLine();
+
+            if(respostaUsuario.equalsIgnoreCase("sim")){
+                condicao = true;
+            }
+        
         }
 
         entrada.close();
