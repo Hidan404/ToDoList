@@ -14,7 +14,27 @@ public class App {
 
         boolean condicao =  true;
         while (!condicao) {
-            
+
+            System.out.println("Escolha uma das ocoes 1\n 2\n 3\n");
+            int escolha = entrada.nextInt();
+
+            switch (escolha) {
+                case 1:
+                    System.out.println("Tarefa adicionada ");
+                    String tarefa = entrada.nextLine();
+
+                    lista.adicionarItem(tarefa);
+                    break;
+                case 2:
+                    System.out.println("Lista de tarefas ");
+
+                    lista.listarItemns();
+                    break;
+                default:
+                    break;
+            }
         }
+
+        entrada.close();
     }
 }
