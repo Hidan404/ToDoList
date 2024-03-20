@@ -30,7 +30,7 @@ public class TodoList {
 
     @Override
     public String toString() {
-        return "Lista = " + items + " ";
+        return "Lista =  " + items + " ";
     }
 
     
